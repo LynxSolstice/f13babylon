@@ -204,9 +204,6 @@
 	mutantrace_variation = STYLE_DIGITIGRADE
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets
 
-/obj/item/clothing/suit/f13/goner/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/suit/f13/goner/red
 	name = "red-patched drab trenchcoat"
@@ -322,9 +319,6 @@
 	slowdown = 0.05
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets
 
-/obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 //Armored jacket
 /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket/armored
@@ -589,9 +583,6 @@
 	armor = list("melee" = 45, "bullet" = 45, "laser" = 35, "energy" = 20, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 10)
 	slowdown = 0.12
 
-/obj/item/clothing/suit/hooded/followerheavy/followerheavy/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate/weak)
 
 /obj/item/clothing/head/hooded/followerheavy
 	name = "\improper Followers guard heavy armor hood"
@@ -601,7 +592,3 @@
 	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR|HIDESNOUT
 	item_state = "follower_heavy"
 	armor = list("melee" = 45, "bullet" = 45, "laser" = 35, "energy" = 20, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 10)
-
-/obj/item/clothing/head/hooded/followerheavy/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate/weak)

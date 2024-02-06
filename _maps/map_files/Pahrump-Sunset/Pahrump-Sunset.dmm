@@ -19241,7 +19241,6 @@
 /area/f13/wasteland/quarry)
 "bqF" = (
 /obj/structure/rack/shelf_metal,
-/obj/item/stack/crafting/armor_plate/fifty,
 /turf/open/floor/wood/wood_worn,
 /area/f13/city/bighorn)
 "bqG" = (

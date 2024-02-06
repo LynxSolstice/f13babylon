@@ -174,7 +174,6 @@
 	icon_state = "legion_centurion"
 	armor = list("melee" = 60, "bullet" = 50, "laser" = 35, "energy" = 10, "bomb" = 45, "bio" = 20, "rad" = 20, "fire" = 45, "acid" = 45, "wound" = 32)
 	slowdown = 0.1
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 10) // Rest in pieces
 
 /obj/item/clothing/suit/armored/heavy/legion/palacent
 	name = "paladin-slayer centurion armor"
@@ -195,7 +194,6 @@
 	desc = "The armor appears to be a full suit of heavy gauge steel and offers full body protection. It also has a cloak in excellent condition, but the armor itself bears numerous battle scars and the helmet is missing half of the left horn. The Legate's suit appears originally crafted, in contrast to other Legion armor which consists of repurposed pre-War sports equipment."
 	icon_state = "legion_legate"
 	armor = list("melee" = 60, "bullet" = 60, "laser" = 40, "energy" = 10, "bomb" = 45, "bio" = 60, "rad" = 20, "fire" = 80, "acid" = 0, "wound" = 10)
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 15) // Wouldn't it be hilarious if we just tore apart the Legate's armor?
 
 /*
 

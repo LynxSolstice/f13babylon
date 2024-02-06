@@ -7201,7 +7201,6 @@
 /area/f13/legion)
 "gXG" = (
 /obj/structure/rack,
-/obj/item/stack/crafting/armor_plate/twenty,
 /turf/open/floor/plasteel/f13/stone/rugged,
 /area/f13/legion)
 "gXH" = (
@@ -15988,7 +15987,6 @@
 	req_access_txt = "150";
 	req_one_access_txt = "150"
 	},
-/obj/item/stack/crafting/armor_plate/five,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/highmid,
 /turf/open/floor/f13/wood,
 /area/f13/building)

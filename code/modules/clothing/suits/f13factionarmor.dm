@@ -60,9 +60,6 @@
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bulletbelt
 	mutantrace_variation = STYLE_DIGITIGRADE
 
-/obj/item/clothing/suit/armor/f13/raider/badlands/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/suit/armor/f13/raider/jackal
 	name = "Jackal armored rags"
@@ -73,9 +70,6 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_light.dmi'
 	armor = list("melee" = 30, "bullet" = 30, "laser" = 15, "bio" = 0, "bomb" = 20, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 10)
 
-/obj/item/clothing/suit/armor/f13/raider/jackal/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/suit/armor/f13/raider/ncrcfarmor
 	name = "NCRCF armored jacket"
@@ -86,9 +80,6 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_light.dmi'
 	armor = list("melee" = 20, "bullet" = 30, "laser" = 20, "bio" = 0, "bomb" = 25, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 15)
 
-/obj/item/clothing/suit/armor/f13/raider/ncrcfarmor/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/suit/armor/f13/raider/painspike
 	name = "painspike raider armor"
@@ -128,9 +119,6 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_medium.dmi'
 	slowdown = 0.1
 
-/obj/item/clothing/suit/armor/f13/exile/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/suit/armor/f13/exile/ncrexile
 	name = "modified NCR armor"
@@ -209,12 +197,8 @@
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS
 	armor = list("melee" = 30, "bullet" = 30, "laser" = 10, "energy" = 5, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 0, "wound" = 10)
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bulletbelt
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 2)
 	slowdown = 0.06
 
-/obj/item/clothing/suit/armor/f13/legion/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/suit/armor/f13/legion/recruit			//Legion Recruit armor
 	name = "legion recruit armor"
@@ -235,7 +219,6 @@
 	icon_state = "legion_prime"
 	item_state = "legion_prime"
 	armor = list("melee" = 35, "bullet" = 25, "laser" = 15, "energy" = 5, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 20)
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 4)
 
 /obj/item/clothing/suit/armor/f13/legion/prime/explorer		//Legion Explorer armor
 	name = "legion explorer armor"
@@ -249,7 +232,6 @@
 	name = "legion prime decanus armor"
 	desc = "Legion prime decanus armor-an extra reinforced baseball uniform."
 	armor = list("melee" = 35, "bullet" = 30, "laser" = 15, "energy" = 5, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 25)
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 6)
 
 /obj/item/clothing/suit/armor/f13/legion/veteran			//Legion Veteran armor
 	name = "legion veteran armor"
@@ -259,7 +241,6 @@
 	icon_state = "legion_veteran"
 	item_state = "legion_veteran"
 	armor = list("melee" = 45, "bullet" = 35, "laser" = 25, "energy" = 5, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 0, "wound" = 30)
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 6)
 	slowdown = 0.08
 
 /obj/item/clothing/suit/armor/f13/legion/veteran/vexillarius	//Legion Vexillarius armor
@@ -268,7 +249,6 @@
 	icon_state = "legion_vex"
 	item_state = "legion_vex"
 	armor = list("melee" = 45, "bullet" = 40, "laser" = 30, "energy" = 10, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0, "wound" = 30)
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 8)
 	slowdown = 0.1
 
 //OFFICER ROLES
@@ -280,7 +260,6 @@
 	icon_state = "legion_heavy"
 	item_state = "legion_heavy"
 	armor = list("melee" = 50, "bullet" = 40, "laser" = 30, "energy" = 10, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0, "wound" = 35)
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 8)
 	slowdown = 0.12
 
 /obj/item/clothing/suit/armor/f13/legion/centurion					//Legion Centurion armor
@@ -291,7 +270,6 @@
 	icon_state = "legion_centurion"
 	item_state = "legion_centurion"
 	armor = list("melee" = 55, "bullet" = 45, "laser" = 35, "energy" = 15, "bomb" = 35, "bio" = 0, "rad" = 0, "fire" = 35, "acid" = 45, "wound" = 40)
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 10)
 	slowdown = 0.12
 
 /obj/item/clothing/suit/armor/f13/legion/centurion/paladinslayer	//Legion Centurion armor, Paladin-Slayer loadout
@@ -391,12 +369,8 @@
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS
 	armor = list("melee" = 15, "bullet" = 35, "laser" = 25, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 25)
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bulletbelt
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 2)
 	slowdown = 0.1
 
-/obj/item/clothing/suit/armor/f13/ncr/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/suit/armor/f13/ncr/trooper		//NCR Trooper armor
 	name = "\improper NCR patrol vest"
@@ -430,7 +404,6 @@
 	icon_state = "ncr_reinforced_vest"
 	item_state = "ncr_reinforced_vest"
 	armor = list("melee" = 15, "bullet" = 35, "laser" = 25, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 30)
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 4)
 
 /obj/item/clothing/suit/armor/f13/ncr/reinforced/engineer		//NCR Combat Engineer armor
 	name = "\improper NCR blast-padded patrol vest"
@@ -443,7 +416,6 @@
 	icon_state = "ncr_reinforced_mantle"
 	armor = list("melee" = 20, "bullet" = 40, "laser" = 30, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 35)
 	slowdown = 0.12
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 6)
 
 /obj/item/clothing/suit/armor/f13/ncr/reinforced/mantle/sergeant/trenchraider		//NCR Sergeant armor, Trench Raider loadout
 	name = "\improper NCR reinforced trench mantle vest"
@@ -458,7 +430,6 @@
 	item_state = "ncr_salvaged"
 	armor = list("melee" = 45, "bullet" = 65, "laser" = 50, "energy" = 20, "bomb" = 40, "bio" = 0, "rad" = 0, "fire" = 40, "acid" = 0, "wound" = 50)
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bulletbelt
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 8)
 	slowdown = 0.25		//0.35 with helmet
 
 /obj/item/clothing/suit/armor/f13/ncr/heavygunner						//NCR Heavy Gunner armor, Flamethrower loadout
@@ -470,7 +441,6 @@
 	item_state = "steel_bib_ncra"
 	armor = list("melee" = 45, "bullet" = 45, "laser" = 35, "energy" = 15, "bomb" = 35, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 0, "wound" = 45)
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bulletbelt
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 8)
 	slowdown = 0.18		//0.22 with helmet
 
 //OFFICER ROLES
@@ -480,7 +450,6 @@
 	icon_state = "ncr_lt_armour"
 	item_state = "ncr_lt_armour"
 	armor = list("melee" = 30, "bullet" = 45, "laser" = 35, "energy" = 15, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0, "wound" = 40)
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 8)
 	slowdown = 0.14
 
 /obj/item/clothing/suit/armor/f13/ncr/reinforced/mantle/officer/captain				//NCR Captain Armor
@@ -489,7 +458,6 @@
 	icon_state = "ncr_captain_armour"
 	item_state = "ncr_captain_armour"
 	armor = list("melee" = 35, "bullet" = 50, "laser" = 40, "energy" = 20, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0, "wound" = 45)
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 10)
 	unique_reskin = list(
 		"M1" = "ncr_captain_armour",
 		"M2" = "ncr_officer_coat",
@@ -517,12 +485,8 @@
 	item_state = "duster_recon"
 	armor = list("melee" = 15, "bullet" = 35, "laser" = 30, "energy" = 10, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 15, "acid" = 0, "wound" = 25)
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bulletbelt
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 6)
 	slowdown = 0.08
 
-/obj/item/clothing/suit/toggle/armor/f13/reconranger/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/suit/armor/f13/ncr/trailranger			//Trail Ranger armor
 	name = "trail ranger vest"
@@ -531,7 +495,6 @@
 	item_state = "cowboyrang"
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS
 	armor = list("melee" = 20, "bullet" = 30, "laser" = 25, "energy" = 5, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 15, "acid" = 0, "wound" = 20)
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 6)
 	slowdown = 0.06
 	unique_reskin = list(
 		"M1" = "vest_utility",
@@ -562,7 +525,6 @@
 	icon_state = "ranger"
 	item_state = "ranger"
 	armor = list("melee" = 25, "bullet" = 50, "laser" = 30, "energy" = 15, "bomb" = 25, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 40)
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 8)
 	mutantrace_variation = STYLE_DIGITIGRADE
 	slowdown = 0.08
 	unique_reskin = list(
@@ -732,9 +694,6 @@
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets
 	slowdown = 0.06
 
-/obj/item/clothing/suit/armor/khan_jacket/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 //Wayfarer
 /obj/item/clothing/suit/armor/f13/lightcloak
@@ -801,9 +760,6 @@
 	mutantrace_variation = STYLE_DIGITIGRADE
 	armor = list("melee" = 15, "bullet" = 15, "laser" = 15, "energy" = 0, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0, "wound" = 10)
 
-/obj/item/clothing/suit/f13/police/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/suit/f13/police/lieutenant
 	name = "police lieutenant's jacket"
@@ -850,9 +806,6 @@
 	item_state = "usmc_riot_gear"
 	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "energy" = 35, "bomb" = 20, "bio" = 25, "rad" = 25, "fire" = 20, "acid" = 20, "wound" = 20)
 
-/obj/item/clothing/suit/armor/f13/usmcriot/Initialize(mapload) //HQ parts reinforcement
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/suit/armor/f13/usmcriot/armypilot
 	name = "enclave officer pilot suit"
@@ -866,9 +819,6 @@
 	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "energy" = 35, "bomb" = 20, "bio" = 25, "rad" = 25, "fire" = 20, "acid" = 20, "wound" = 20)
 	mutantrace_variation = STYLE_DIGITIGRADE
 
-/obj/item/clothing/suit/armor/f13/enclavetrenchcoat/Initialize(mapload) //HQ parts reinforcement
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/suit/armor/f13/environmentalsuit
 	name = "enclave envirosuit"

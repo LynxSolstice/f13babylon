@@ -798,7 +798,6 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier4,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
-/obj/item/stack/crafting/armor_plate/twenty,
 /obj/machinery/light/floor,
 /turf/open/floor/f13/wood,
 /area/f13/tunnel/bighorn)

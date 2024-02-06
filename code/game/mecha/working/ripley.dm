@@ -22,7 +22,7 @@
 /*
 /obj/mecha/working/ripley/Initialize(mapload)
 	. = ..()
-	AddComponent(/datum/component/armor_plate,3,/obj/item/stack/sheet/animalhide/goliath_hide,list("melee" = 10, "bullet" = 5, "laser" = 5))
+	AddComponent(/obj/item/stack/sheet/animalhide/goliath_hide,list("melee" = 10, "bullet" = 5, "laser" = 5))
 */
 /obj/mecha/working/ripley/Destroy()
 	for(var/atom/movable/A in cargo)

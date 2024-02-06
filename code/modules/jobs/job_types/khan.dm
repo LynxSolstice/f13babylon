@@ -237,7 +237,6 @@
 		/obj/item/ammo_box/magazine/w308 = 2,
 		/obj/item/melee/onehanded/knife/bowie = 1,
 		/obj/item/storage/belt/utility/full/engi = 1,
-		/obj/item/stack/crafting/armor_plate/ten = 1,
 		)
 
 

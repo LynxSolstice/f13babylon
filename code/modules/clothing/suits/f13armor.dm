@@ -67,9 +67,6 @@
 	slowdown = 0.02
 	mutantrace_variation = STYLE_DIGITIGRADE
 
-/obj/item/clothing/suit/armor/f13/kit/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/suit/armor/f13/kit/punk
 	name = "armor kit"
@@ -162,7 +159,6 @@
 	item_state = "combat_armor"
 	armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 10, "bomb" = 15, "bio" = 10, "rad" = 10, "fire" = 15, "acid" = 0, "wound" = 15)
 	slowdown = 0.12
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 5)
 	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/armor/f13/combat/laserproof
@@ -201,7 +197,6 @@
 	item_state = "combat_armor_mk2"
 	armor = list("melee" = 45, "bullet" = 45, "laser" = 45, "energy" = 15, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 20, "acid" = 0, "wound" = 20)
 	slowdown = 0.14
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 10)
 	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/armor/f13/combat/mk2/dark
@@ -280,7 +275,6 @@
 	resistance_flags = LAVA_PROOF | FIRE_PROOF | ACID_PROOF
 	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
 	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 20)
 	salvage_tool_behavior = TOOL_WELDER
 	/// Cell that is currently installed in the suit
 	var/obj/item/stock_parts/cell/cell = /obj/item/stock_parts/cell/high
@@ -621,7 +615,6 @@
 	item_state = "t51bpowerarmor"
 	slowdown = 0.25 //+0.05 from helmet = total 0.3
 	armor = list("melee" = 70, "bullet" = 70, "laser" = 60, "energy" = 35, "bomb" = 65, "bio" = 100, "rad" = 99, "fire" = 90, "acid" = 40, "wound" = 50)
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 25)
 	salvaged_type = /obj/item/clothing/suit/armored/heavy/salvaged_pa/t51b
 	mutantrace_variation = STYLE_DIGITIGRADE
 
@@ -675,7 +668,6 @@
 	item_state = "t60powerarmor"
 	slowdown = 0.25
 	armor = list("melee" = 70, "bullet" = 70, "laser" = 75, "energy" = 50, "bomb" = 82, "bio" = 100, "rad" = 100, "fire" = 95, "acid" = 50, "wound" = 50)
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 30)
 	salvaged_type = /obj/item/clothing/suit/armored/heavy/salvaged_pa/t60
 
 /obj/item/clothing/suit/armor/f13/power_armor/t60/bos

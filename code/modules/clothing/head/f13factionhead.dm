@@ -133,9 +133,6 @@
 	armor = list("melee" = 35, "bullet" = 20, "laser" = 10, "energy" = 0, "bomb" = 25, "bio" = 20, "rad" = 30, "fire" = 30, "acid" = 20, "wound" = 10)
 	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR
 
-/obj/item/clothing/head/helmet/f13/jackal/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/head/helmet/f13/raidermetal
 	name = "metal raider helmet"
@@ -222,9 +219,6 @@
 	dynamic_hair_suffix = ""
 	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "energy" = 35, "bomb" = 20, "bio" = 25, "rad" = 25, "fire" = 20, "acid" = 20, "wound" = 20)
 
-/obj/item/clothing/head/helmet/f13/enclave/usmcriot/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/head/helmet/f13/enclave/usmcriot/armypilot
 	name = "enclave officer pilot helmet"
@@ -250,9 +244,6 @@
 	obj_flags = UNIQUE_RENAME
 	unique_reskin = list("M1" = "hosberetblack")
 
-/obj/item/clothing/head/helmet/f13/enclave/officer/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 //////////
 //LEGION//
@@ -299,11 +290,7 @@
 	flags_inv = HIDEEARS|HIDEHAIR
 	dynamic_hair_suffix = ""
 	armor = list("melee" = 30, "bullet" = 30, "laser" = 10, "energy" = 5, "bomb" = 15, "bio" = 0, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 10)
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 2)
 
-/obj/item/clothing/head/helmet/f13/legion/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/head/helmet/f13/legion/recruit			//Legion Recruit helmet
 	name = "legion recruit helmet"
@@ -325,7 +312,6 @@
 	item_state = "legion-prime"
 	icon_state = "legion-prime"
 	armor = list("melee" = 35, "bullet" = 25, "laser" = 15, "energy" = 5, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 20)
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 4)
 
 /obj/item/clothing/head/helmet/f13/legion/prime/explorer	//Legion Explorer helmet
 	name = "legion scout hood"
@@ -347,7 +333,6 @@
 	icon_state = "legion-veteran"
 	item_state = "legion-veteran"
 	armor = list("melee" = 45, "bullet" = 35, "laser" = 25, "energy" = 5, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 0, "wound" = 30)
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 6)
 
 /obj/item/clothing/head/helmet/f13/legion/veteran/vexillarius	//Legion Vexillarius helmet
 	name = "legion fox vexillarius helmet"
@@ -355,7 +340,6 @@
 	icon_state = "legion-vex-alt"
 	item_state = "legion-vex-alt"
 	armor = list("melee" = 45, "bullet" = 40, "laser" = 30, "energy" = 10, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0, "wound" = 30)
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 8)
 
 /obj/item/clothing/head/helmet/f13/legion/veteran/vexillarius/bear
 	name = "legion bear vexillarius helmet"
@@ -376,7 +360,6 @@
 	icon_state = "legion-decvet-alt"
 	item_state = "legion-decvet-alt"
 	armor = list("melee" = 50, "bullet" = 40, "laser" = 30, "energy" = 10, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0, "wound" = 35)
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 8)
 
 /obj/item/clothing/head/helmet/f13/legion/veteran/decanus/visor
 	name = "reinforced legion veteran decanus helmet"
@@ -398,7 +381,6 @@
 	flags_inv = HIDEEARS|HIDEHAIR
 	dynamic_hair_suffix = ""
 	armor = list("melee" = 55, "bullet" = 45, "laser" = 35, "energy" = 15, "bomb" = 35, "bio" = 0, "rad" = 0, "fire" = 35, "acid" = 0, "wound" = 40)
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 10)
 
 /obj/item/clothing/head/helmet/f13/legion/centurion/paladinslayer	//Legion Centurion armor, Paladin-Slayer loadout
 	name = "paladin-slayer centurion helmet"
@@ -484,11 +466,7 @@
 	item_state = "ncr_steelpot"
 	flags_inv = HIDEEARS
 	armor = list("melee" = 15, "bullet" = 35, "laser" = 25, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 25)
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 2)
 
-/obj/item/clothing/head/helmet/f13/ncr/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/head/helmet/f13/ncr/trooper			//NCR Trooper helmet
 	name = "\improper NCR trooper helmet"
@@ -560,7 +538,6 @@
 	alt_toggle_message = "You push the goggles down on the"
 	visor_flags_cover = HEADCOVERSEYES
 	armor = list("melee" = 15, "bullet" = 35, "laser" = 25, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 30)
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 4)
 
 /obj/item/clothing/head/helmet/f13/ncr/corporal/attack_self(mob/user)
 	if(can_toggle && !user.incapacitated())
@@ -608,7 +585,6 @@
 	item_state = "hardhat0_ncr"
 	hat_type = "ncr"
 	armor = list("melee" = 15, "bullet" = 30, "laser" = 30, "energy" = 10, "bomb" = 60, "bio" = 0, "rad" = 0, "fire" = 40, "acid" = 0, "wound" = 30)
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 4)
 
 /obj/item/clothing/head/helmet/f13/ncr/sapper		//NCR sapper beret (Combat Engineer helmet reskin)
 	name = "\improper NCR sapper beret"
@@ -617,7 +593,6 @@
 	item_state = "ncr_sapper_beret"
 	flags_inv = null
 	armor = list("melee" = 15, "bullet" = 30, "laser" = 30, "energy" = 10, "bomb" = 60, "bio" = 0, "rad" = 0, "fire" = 40, "acid" = 0, "wound" = 30)
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 4)
 
 /obj/item/clothing/head/helmet/f13/ncr/sergeant		//NCR Sergeant hat
 	name = "\improper NCR campaign hat"
@@ -625,7 +600,6 @@
 	icon_state = "ncr_campaign"
 	item_state = "ncr_campaign"
 	armor = list("melee" = 20, "bullet" = 40, "laser" = 30, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 35)
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 6)
 
 /obj/item/clothing/head/helmet/f13/ncr/sergeant/trenchraider			//NCR Sergeant helmet, Trench Raider loadout
 	name = "\improper NCR trench raider helmet"
@@ -643,7 +617,6 @@
 	item_state = "t45bhelmet_ncr"
 	flash_protect = 1
 	armor = list("melee" = 45, "bullet" = 65, "laser" = 50, "energy" = 20, "bomb" = 40, "bio" = 0, "rad" = 0, "fire" = 40, "acid" = 0, "wound" = 50)
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 8)
 	slowdown = 0.1		//0.35 with chestpiece
 
 /obj/item/clothing/head/helmet/f13/ncr/heavygunner						//NCR Heavy Gunner helmet, Flamethrower loadout
@@ -663,7 +636,6 @@
 	visor_flags_cover = HEADCOVERSEYES|HEADCOVERSMOUTH
 	visor_flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDESNOUT
 	armor = list("melee" = 45, "bullet" = 45, "laser" = 35, "energy" = 15, "bomb" = 35, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 0, "wound" = 45)
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 8)
 	slowdown = 0.04		//0.22 with chestpiece
 
 /obj/item/clothing/head/helmet/f13/ncr/heavygunner/attack_self(mob/user)
@@ -696,7 +668,6 @@
 	item_state = "ncr_officer_beret"
 	flags_inv = null
 	armor = list("melee" = 30, "bullet" = 45, "laser" = 35, "energy" = 15, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0, "wound" = 40)
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 8)
 
 /obj/item/clothing/head/helmet/f13/ncr/officer/captain				//NCR Captain beret
 	name = "\improper NCR captain beret"
@@ -704,7 +675,6 @@
 	icon_state = "ncr_captain_beret"
 	item_state = "ncr_captain_beret"
 	armor = list("melee" = 35, "bullet" = 50, "laser" = 40, "energy" = 20, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0, "wound" = 45)
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 10)
 
 /obj/item/clothing/head/helmet/f13/ncr/officer/captain/colonel		//NCR Colonel cap
 	name = "\improper NCR colonel peaked cap"
@@ -732,7 +702,6 @@
 	item_state = "ncr_sof_beret"
 	flags_inv = null
 	armor = list("melee" = 15, "bullet" = 35, "laser" = 30, "energy" = 10, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 15, "acid" = 0, "wound" = 25)
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 6)
 
 /obj/item/clothing/head/helmet/f13/ncr/trailranger		//Trail Ranger hat
 	name = "trail ranger hat"
@@ -740,7 +709,6 @@
 	icon_state = "cowboyrang"
 	item_state = "cowboyrang"
 	armor = list("melee" = 20, "bullet" = 30, "laser" = 25, "energy" = 5, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 15, "acid" = 0, "wound" = 20)
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 6)
 	unique_reskin = list(
 		"M1" = "vaquerohat",
 		"M2" = "marlowhat",
@@ -756,7 +724,6 @@
 	icon_state = "rangerhat"
 	item_state = "rangerhat"
 	armor = list("melee" = 30, "bullet" = 50, "laser" = 40, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 30)
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 6)
 	unique_reskin = list(
 		"M1" = "drillhat_old",
 		"M2" = "marlowhat",
@@ -776,7 +743,6 @@
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR|HIDESNOUT
 	dynamic_hair_suffix = ""
 	armor = list("melee" = 30, "bullet" = 50, "laser" = 40, "energy" = 10, "bomb" = 20, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 0, "wound" = 30)
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 6)
 	unique_reskin = list(
 		"M1" = "ncr_patrol_helmet_old",
 		"M2" = "ncr_helmet_mk2",
@@ -802,7 +768,7 @@
 	glass_colour_type = /datum/client_colour/glass_colour/red
 	lighting_alpha = LIGHTING_PLANE_ALPHA_NV_TRAIT
 	darkness_view = 24
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 8, /obj/item/clothing/glasses/night/polarizing = 1)
+	salvage_loot = list(/obj/item/clothing/glasses/night/polarizing = 1)
 
 /obj/item/clothing/head/helmet/f13/ncr/vetranger/desert
 	name = "desert ranger combat helmet"
@@ -934,9 +900,6 @@
 	dynamic_hair_suffix = ""
 	strip_delay = 20
 
-/obj/item/clothing/head/helmet/f13/khan/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/head/helmet/f13/khan/pelt
 	desc = "A helmet with traditional horns, but wasteland-chique fur trimming instead of the classic leather cover. For the Khan who wants to show off their hair."
@@ -1282,7 +1245,6 @@
 	icon_state = "legion-venator"
 	item_state = "legion-venator"
 	armor = list("melee" = 50, "bullet" = 35, "laser" = 20, "energy" = 20, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 40)
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 2)
 
 //Enclave / Remnant
 

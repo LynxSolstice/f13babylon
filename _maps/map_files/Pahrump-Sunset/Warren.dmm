@@ -7119,8 +7119,6 @@
 /obj/structure/closet/crate,
 /obj/item/advanced_crafting_components/alloys,
 /obj/item/advanced_crafting_components/alloys,
-/obj/item/stack/crafting/armor_plate,
-/obj/item/stack/crafting/armor_plate,
 /turf/open/floor/plasteel/dark,
 /area/f13/caves)
 "ggv" = (

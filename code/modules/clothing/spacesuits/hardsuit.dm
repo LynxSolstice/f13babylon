@@ -241,9 +241,6 @@
 	armor = list("melee" = 35, "bullet" = 40, "laser" = 35, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 40)
 	light_range = 7
 
-/obj/item/clothing/head/helmet/space/hardsuit/mining/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/suit/space/hardsuit/mining
 	icon_state = "hardsuit-mining"
@@ -256,10 +253,6 @@
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/mining
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_ALL_TAURIC
-
-/obj/item/clothing/suit/space/hardsuit/mining/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 	//Syndicate hardsuit
 /obj/item/clothing/head/helmet/space/hardsuit/syndi

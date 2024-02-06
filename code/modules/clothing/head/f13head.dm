@@ -57,7 +57,6 @@
 	flags_inv = HIDEEARS|HIDEHAIR
 	dynamic_hair_suffix = ""
 	armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 10, "bomb" = 15, "bio" = 10, "rad" = 10, "fire" = 15, "acid" = 0, "wound" = 15)
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 5)
 
 /obj/item/clothing/head/helmet/f13/combat/dark
 	color = "#302E2E" // Dark Grey
@@ -79,7 +78,6 @@
 	flags_cover = HEADCOVERSEYES
 	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR
 	armor = list("melee" = 45, "bullet" = 45, "laser" = 45, "energy" = 15, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 20, "acid" = 0, "wound" = 20)
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 10)
 
 /obj/item/clothing/head/helmet/f13/combat/mk2/dark
 	name = "reinforced combat helmet"
@@ -244,7 +242,6 @@
 	light_system = MOVABLE_LIGHT_DIRECTIONAL
 	light_range = 5
 	light_on = FALSE
-	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 10)
 	salvage_tool_behavior = TOOL_WELDER
 	/// Projectiles below this damage will get deflected
 	/// If TRUE - it requires PA training trait to be worn
@@ -587,9 +584,6 @@
 	dynamic_hair_suffix = ""
 	mutantrace_variation = STYLE_MUZZLE
 
-/obj/item/clothing/head/f13/headscarf/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/head/f13/pot
 	name = "metal cooking pot"
@@ -607,9 +601,6 @@
 	item_state = "dethat"
 	armor = list("melee" = 15, "bullet" = 15, "laser" = 15, "energy" = 0, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0, "wound" = 10)
 
-/obj/item/clothing/head/f13/cowboy/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/head/f13/bandit
 	name = "bandit hat"
@@ -618,9 +609,6 @@
 	item_state = "fedora"
 	armor = list("melee" = 15, "bullet" = 15, "laser" = 15, "energy" = 0, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0, "wound" = 10)
 
-/obj/item/clothing/head/f13/bandit/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/head/f13/gambler
 	name = "gambler hat"
@@ -629,9 +617,6 @@
 	item_state = "dethat"
 	armor = list("melee" = 15, "bullet" = 15, "laser" = 15, "energy" = 0, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0, "wound" = 10)
 
-/obj/item/clothing/head/f13/gambler/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/head/helmet/f13/motorcycle
 	name = "motorcycle helmet"
@@ -667,9 +652,6 @@
 	item_state = "vaquerohat"
 	armor = list("melee" = 15, "bullet" = 15, "laser" = 15, "energy" = 0, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0, "wound" = 10)
 
-/obj/item/clothing/head/helmet/f13/vaquerohat/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/head/helmet/f13/wastewarhat
 	name = "warrior helmet"
@@ -700,9 +682,6 @@
 	item_state = "brahmin_leather_cowboy_hat"
 	armor = list("melee" = 15, "bullet" = 15, "laser" = 15, "energy" = 0, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0, "wound" = 10)
 
-/obj/item/clothing/head/helmet/f13/brahmincowboyhat/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/head/helmet/f13/rustedcowboyhat
 	name = "Rusted Cowboy Hat"
@@ -711,9 +690,6 @@
 	item_state = "rusted_cowboy"
 	armor = list("melee" = 15, "bullet" = 15, "laser" = 15, "energy" = 0, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0, "wound" = 10)
 
-/obj/item/clothing/head/helmet/f13/rustedcowboyhat/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/head/f13/police
 	name = "police hat"
@@ -722,9 +698,6 @@
 	item_state = "fedora"
 	armor = list("melee" = 15, "bullet" = 15, "laser" = 15, "energy" = 0, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0, "wound" = 10)
 
-/obj/item/clothing/head/f13/police/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/head/simplekitty
 	name = "kitty headband"
@@ -797,9 +770,6 @@
 	item_state = "ranger_grey_hat"
 	armor = list("melee" = 15, "bullet" = 15, "laser" = 15, "energy" = 0, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0, "wound" = 10)
 
-/obj/item/clothing/head/f13/ranger_hat/Initialize(mapload) //HQ parts reinforcement
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/head/f13/ranger_hat/banded
 	name = "banded cowboy hat"
@@ -850,9 +820,6 @@
 	dynamic_hair_suffix = ""
 	flags_inv = HIDEHAIR|HIDEEARS
 
-/obj/item/clothing/head/helmet/f13/goner/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/head/helmet/f13/goner/red
 	name = "red-marked generic helmet"

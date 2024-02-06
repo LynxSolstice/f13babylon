@@ -326,7 +326,6 @@ Fence
 						/obj/item/gun/ballistic/revolver/winchesterrebored = 10,
 						/obj/item/gun/ballistic/automatic/autopipe = 15,
 						/obj/item/gun/energy/lasmusket = 15,
-						/obj/item/stack/crafting/armor_plate = 20,
 						)
 
 /obj/machinery/mineral/wasteland_trader/gunbuyer/ui_interact(mob/user)
