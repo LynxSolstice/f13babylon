@@ -23,7 +23,7 @@
  * @param hook	Identifier of the hook to call.
  * @returns		1 if all hooked code runs successfully, 0 otherwise.
  */
-/proc/callHook(hook, list/args=null)
+/*/proc/callHook(hook, list/args=null) // COMMENTED OUT CAUSE I THINK IT'S BUILT IN TO BYOND NOW?
 	var/hook_path = text2path("/hook/[hook]")
 	if(!hook_path)
 		CRASH("Invalid hook '/hook/[hook]' called.")
